@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Pedidos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="sms" maxOccurs="unbouned">
+        <xs:complexType>
+          <xs:sequence>
+          <xs:element name="tlfnocliente" type="xs:integer"/>
+          <xs:element name="fechapedido" type="xs:date"/>
+          <xs:element name="contenido" type="xs:string"/>
+        </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
