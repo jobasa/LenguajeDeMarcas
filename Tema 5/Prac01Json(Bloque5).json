@@ -1,30 +1,37 @@
 {
-  "persona": {
-    "parsererror": {
-      "-style": "display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black",
-      "h3": [
-        "This page contains the following errors:",
-        "Below is a rendering of the page up to the first error."
-      ],
-      "div": {
-        "-style": "font-family:monospace;font-size:12px",
-        "#text": "error on line 16 at column 1: Extra content at the end of the document
-"
+  "personas":{
+    "persona":[
+      {
+        "nombre":"Pepe",
+        "altura":"1.72",
+        "peso":"75",
+        "aficion":[
+          "Futbol",
+          "Baloncesto",
+          "Toros"
+        ],
+        "soltero":"true",
+        "direccion":{
+          "calle":"La mascletà",
+          "numero":"44",
+          "ciudad":"Valencia"
+        }
+      },
+      {
+        "nombre":"Juan",
+        "altura":"1.69",
+        "peso":"72",
+        "aficion":[
+          "Futbol",
+          "Fotografía"
+        ],
+        "soltero":"false",
+        "direccion":{
+          "calle":"La Foguera",
+          "numero":"78",
+          "ciudad":"Alicante"
+        }
       }
-    },
-    "nombre": "Pepe",
-    "altura": "1.72",
-    "peso": "75",
-    "aficion": [
-      "Fútbol",
-      "Baloncesto",
-      "Toros"
-    ],
-    "soltero": "true",
-    "direccion": {
-      "calle": "La mascletà",
-      "numero": "44",
-      "ciudad": "Valencia"
-    }
+    ]
   }
 }
