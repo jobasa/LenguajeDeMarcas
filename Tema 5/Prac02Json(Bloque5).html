@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Prac02</title>
+
+      <script language = "javascript" >
+
+         document.writeln("<h2>Equipos de la NBA</h2>");
+
+         var equipos = { "nba" :
+         [{ "Nombre_Equipo1"  : "Los Angeles Lakers", "ciudad1" : "Los Angeles", "estado1" : "California"}],
+
+         "Jugadores" :
+         [{ "Nombre_Jugador" : " Wilt Chamberlain", "Demarcacion" : "Base", "Altura" : "2.16", "Nacionalidad" : "Estado Unidense"}]
+
+
+
+         }
+
+         var i = 0
+         document.writeln("<table border = '2'><tr>");
+
+         for(i = 0;i<equipos.nba.length;i++){
+            document.writeln("<td>");
+            document.writeln("<table border = '1' width = 300 >");
+            document.writeln("<tr><td><b>Nombre_Equipo</b></td><td width = 300>" + equipos.nba[i].Nombre_Equipo1 +"</td></tr>");
+            document.writeln("<tr><td><b>Ciudad</b></td><td width = 300>" + equipos.nba[i].ciudad1 +"</td></tr>");
+            document.writeln("<tr><td><b>Estado</b></td><td width = 300>" + equipos.nba[i].estado1 +"</td></tr>");
+            document.writeln("</table>");
+            document.writeln("</td>");
+         }
+
+         for(i = 0;i<equipos.Jugadores.length;i++){
+            document.writeln("<td>");
+            document.writeln("<table border = '1' width = 300 >");
+            document.writeln("<tr><td><b>Nombre_Jugador</b></td><td width = 300>" + equipos.Jugadores[i].Nombre_Jugador +"</td></tr>");
+            document.writeln("<tr><td><b>Demarcacion</b></td><td width = 300>" + equipos.Jugadores[i].Demarcacion +"</td></tr>");
+            document.writeln("<tr><td><b>Altura</b></td><td width = 300>" + equipos.Jugadores[i].Altura +"</td></tr>");
+            document.writeln("<tr><td><b>Nacionalidad</b></td><td width = 300>" + equipos.Jugadores[i].Nacionalidad +"</td></tr>");
+
+            document.writeln("</table>");
+            document.writeln("</td>");
+         }
+
+         document.writeln("</tr></table>");
+
+      </script>
+
+   </head>
+
+   <body>
+   </body>
+
+</html>
