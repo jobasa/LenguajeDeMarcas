@@ -8,10 +8,15 @@
          document.writeln("<h2>Equipos de la NBA</h2>");
 
          var equipos = { "nba" :
-         [{ "Nombre_Equipo1"  : "Los Angeles Lakers", "ciudad1" : "Los Angeles", "estado1" : "California"}],
+         [{ "Nombre_Equipo1"  : "Los Angeles Lakers", "ciudad1" : "Los Angeles", "estado1" : "California"},
+          { "Nombre_Equipo1" : "Chicago Bulls", "ciudad1" : "Chicago", "estado1" : "Illinois"}],
 
          "Jugadores" :
-         [{ "Nombre_Jugador" : " Wilt Chamberlain", "Demarcacion" : "Base", "Altura" : "2.16", "Nacionalidad" : "Estado Unidense"}]
+         [{ "Nombre_Jugador" : " Wilt Chamberlain", "Demarcacion" : "Base", "Altura" : "2.16", "Nacionalidad" : "Estadounidense"},
+          { "Nombre_Jugador" : "Kobe Bryant", "Demarcacion": "Escolta", "Altura" : "1.98", "Nacionalidad" : "Estadounidense" },
+          { "Nombre_Jugador" : "Magic Johnson", "Demarcacion" : "Base", "Altura" : "2.06", "Nacionalidad" : "Estadounidense"},
+          { "Nombre_Jugador" : " James Worthy", "Demarcacion" : "Alero", "Altura" : "2.06", "Nacionalidad" : "Estadounidense"},
+          { "Nombre_Jugador" : "Elgin Baylor", "Demarcacion" : "Alero", "Altura" : "1.96", "Nacionalidad" : "Estadounidense"}]
 
 
 
@@ -28,6 +33,7 @@
             document.writeln("<tr><td><b>Estado</b></td><td width = 300>" + equipos.nba[i].estado1 +"</td></tr>");
             document.writeln("</table>");
             document.writeln("</td>");
+
          }
 
          for(i = 0;i<equipos.Jugadores.length;i++){
